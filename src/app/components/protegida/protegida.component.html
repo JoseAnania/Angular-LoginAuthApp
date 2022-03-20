@@ -1,0 +1,15 @@
+
+<h1>Perfil de Usuario</h1>
+<hr>
+<ul *ngIf="auth.user$ | async as user">
+    <li>{{ user.given_name | json }}</li>
+    <li>{{ user.family_name | json }}</li>
+    <li>{{ user.name | json }}</li>
+    <li>{{ user.email | json }}</li>
+    <li>{{ user.nickname | json }}</li>
+    <li>{{ user.picture | json }}</li>
+    <li>{{ user.locale | json }}</li>
+    <li>{{ user.updated_at | json }}</li>
+    <li>{{ user.sub | json }}</li>
+  </ul>
+
